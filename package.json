@@ -1,0 +1,18 @@
+{
+  "name": "atom-fis3-smarty",
+  "main": "./lib/atom-fis3-smarty",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "atom-fis3-smarty:hello"
+  },
+  "repository": "https://github.com/xiangshouding/atom-fis3-smarty",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}
