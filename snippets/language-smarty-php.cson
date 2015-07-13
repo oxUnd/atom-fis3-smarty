@@ -86,3 +86,6 @@
   'Word Wrap':
     'prefix': '|wrap'
     'body': '|wordwrap:${1:80}${2::"${3:\\n}"}'
+  'Html':
+    'prefix': '{html'
+    'body': '{html framework="${1:mod.js}"'
