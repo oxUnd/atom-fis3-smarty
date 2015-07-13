@@ -1,3 +1,4 @@
 ## 0.1.0 - First Release
-* Every feature added
-* Every bug fixed
+* Syntax highlight of Smarty
+* Some snippets of Smarty
+  * include html` plugin tag
