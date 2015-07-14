@@ -142,5 +142,8 @@
         }
       ]
     }
+    {
+      'include': 'source.html'
+    }
 ]
 'scopeName': 'source.smarty'

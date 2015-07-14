@@ -14,9 +14,8 @@ module.exports = AtomFis3Smarty =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-fis3-smarty:toggle': => @toggle()
     @subscriptions.add atom.commands.add 'atom-workspace', 'atom-fis3-smarty:hello' : => @hello()
-    
+
   deactivate: ->
     @modalPanel.destroy()
     @subscriptions.dispose()
@@ -30,16 +29,4 @@ module.exports = AtomFis3Smarty =
     if @modalPanel.isVisible()
       @modalPanel.hide()
     else
-      @modalPanel.show()
-
-  toggle: ->
-    console.log 'AtomFis3Smarty was toggled!'
-
-    if @modalPanel.isVisible()
-      @modalPanel.hide()
-    else
-      editor = atom.workspace.getActiveTextEditor()
-      words = editor.getText().split(/\s+/).length
-      console.log words, "test"
-      @atomFis3SmartyView.setCount(words)
       @modalPanel.show()
